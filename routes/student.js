@@ -10,5 +10,8 @@ router.get('/users',(req,res)=>{
     studentController.getStudents(req,res);
 
 })
+router.get('/user/:rollNo',(req,res)=>{
+    studentController.getStudentByRollNo(req,res);
+})
 
 module.exports = router;
